@@ -1,7 +1,7 @@
 package com.mappings.flightserviceexample.dto;
 
 import com.mappings.flightserviceexample.entity.PassengerInfo;
-import jakarta.persistence.Entity;
+import com.mappings.flightserviceexample.entity.PaymentInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,10 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookingAcknowledgement {
-    private String status;
-    private Double totalFare;
-    private String pnr;
+public class FlightBookingRequest {
     private PassengerInfo passengerInfo;
-
+    private PaymentInfo paymentInfo;
 }
